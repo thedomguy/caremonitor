@@ -1,0 +1,9 @@
+POST http://localhost:3000/api/heart-rate/process
+Content-Type: multipart/form-data; boundary=---boundary
+
+-----boundary
+Content-Disposition: form-data; name="activityData"; filename="clinical_metrics.json"
+Content-Type: application/json
+
+< ./clinical_metrics.json
+-----boundary--
